@@ -1,0 +1,123 @@
+/* Corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Barra superior */
+header {
+    background-color: #2980b9;
+    padding: 20px;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Campo de pesquisa */
+input {
+    width: 300px;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Container do carrossel */
+.carrossel-container {
+    position: relative;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* Faixa do carrossel */
+.carrossel {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.4s ease-in-out;
+}
+
+/* Botões do carrossel */
+.carrossel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.carrossel-btn.left { left: 0; }
+.carrossel-btn.right { right: 0; }
+
+.carrossel-btn:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+/* Container do livro */
+.livro-container {
+    min-width: 250px;
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Imagem do livro */
+.livro-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Nome do livro */
+.livro-container h2 {
+    font-size: 16px;
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+/* Autor do livro */
+.livro-container p {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0;
+}
+
+/* Texto do preço */
+.preco {
+    font-size: 16px;
+    font-weight: bold;
+    color: #27ae60;
+    margin: 10px 0;
+}
+
+/* Botão comprar */
+.botao-comprar {
+    display: inline-block;
+    padding: 8px 12px;
+    background: #2980b9;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.botao-comprar:hover {
+    background: #1c5a85;
+}

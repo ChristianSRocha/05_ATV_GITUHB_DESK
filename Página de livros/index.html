@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard de Livros</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>📚 Dashboard de Livros</h1>
+        <input type="text" id="pesquisa" placeholder="🔍 Buscar livro..." onkeyup="pesquisarLivro()">
+    </header>
+
+    <main>
+        <h2>🔥 Livros Mais Populares</h2>
+        
+        <div class="carrossel-container">
+            <button class="carrossel-btn left" onclick="moverCarrossel(-1)">&#10094;</button>
+            
+            <div id="carrossel" class="carrossel">
+                <!-- Os livros serão adicionados aqui pelo JS -->
+            </div>
+            
+            <button class="carrossel-btn right" onclick="moverCarrossel(1)">&#10095;</button>
+        </div>
+
+        <h2>🔍 Buscar Livro</h2>
+        <div id="livros-container"></div>
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
